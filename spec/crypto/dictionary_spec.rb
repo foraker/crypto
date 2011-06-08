@@ -6,7 +6,7 @@ module Crypto
     describe "#initialize" do
       it "takes a list of words as a parameter" do
         dictionary = Dictionary.new(["MY", "WORDS"])
-        dictionary.words.to_a.should == ["MY", "WORDS"]
+        dictionary.words.to_a.should =~ ["MY", "WORDS"]
       end
 
       it "loads data/2of4brif.txt if no words list is provided" do
